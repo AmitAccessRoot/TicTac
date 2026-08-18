@@ -1,0 +1,16 @@
+# android/app/proguard-rules.pro
+-keep class io.flutter.app.** { *; }
+-keep class io.flutter.plugin.** { *; }
+-keep class io.flutter.util.** { *; }
+-keep class io.flutter.view.** { *; }
+-keep class io.flutter.** { *; }
+-keep class io.flutter.plugins.** { *; }
+-keep class com.caplex.com.** { *; }
+-keep class dev.isar.** { *; }
+-keep class com.it_nomads.fluttersecurestorage.** { *; }
+-dontwarn io.flutter.plugin.**
+-dontwarn dev.isar.**
+-repackageclasses ''
+-allowaccessmodification
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes SourceFile,LineNumberTable
